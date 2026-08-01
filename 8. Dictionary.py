@@ -1,0 +1,29 @@
+#8. DICTIONARY
+tel = {'upin':4098,'ipin':4139}
+
+# menambah data
+tel['guido'] = 4127
+print(tel)
+
+# mengakses nilai
+print(tel['upin'])
+
+# mengakses key yg tidak ada (aman)
+print(tel.get('irv'))  # hasil none
+
+# menghapus data
+del tel['ipin']  
+
+# menambah lagi
+tel['irv']=4127
+print(tel)
+
+# mengubah ke list
+print(list(tel))
+
+# mengurutkan key
+print(sorted(tel))
+
+# mengecek keberadaan key
+print('guido' in tel)
+print('upin' not in tel)
